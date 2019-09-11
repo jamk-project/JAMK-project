@@ -1,5 +1,5 @@
 # Project description:
-This is the team project that is part of the course TTMS1100.9S0V1 (*[JAMK University of Applied Sciences](https://www.jamk.fi/en/Home/)*).
+This is the team project that is part of the course TTMS1100.9S0V1 at *[JAMK University of Applied Sciences](https://www.jamk.fi/en/Home/)*.
 
 ## Our developer team:
 [Johanna Kaasalainen](https://github.com/lasikuula) - team leader, developer  
@@ -11,9 +11,9 @@ This is the team project that is part of the course TTMS1100.9S0V1 (*[JAMK Unive
 The working hours aka **Resources** are marked with [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSf87oao9gASZssCMJP5kPLuoHBxJdDThmxjrn5yhZPqzEg93g/viewform)
 
 ## Timetable:
-8:30 - start of the day
-9:00-9:15 - daily meeting
-10:00-10:15 - coffee brake
-12:00-12:30 - dinner
-14:00-14:15 - coffee brake
-16:30 - end of the day
+8:30 - start of the day  
+9:00-9:15 - daily meeting  
+10:00-10:15 - coffee brake  
+12:00-12:30 - dinner  
+14:00-14:15 - coffee brake  
+16:30 - end of the day  
