@@ -15,5 +15,4 @@ Working hours as [Excel](https://docs.google.com/spreadsheets/d/1eZ1vn9L-PebnHfg
 9:00-9:15 - daily meeting  
 10:00-10:15 - coffee break  
 12:00-12:30 - dinner  
-14:00-14:15 - coffee break
-16:30 - end of the day  
+14:00-14:15 - coffee break. 16:30 - end of the day  
