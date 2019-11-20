@@ -1,20 +1,50 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require("express");
+const routes = require("./routes");
+const cors = require("cors");
+const cron = require("node-cron");
+const axios = require("axios");
+const moment = require("moment");
+const uuid = require("uuid");
+const bodyParser = require("body-parser");
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// Database
+const db = require("./config/database");
 
-var app = express();
+// Connect to db
+db.connect(err => {
+  if (err) {
+    throw err;
+  }
+  console.log("MySql Connected...");
+});
 
-app.use(logger('dev'));
+const app = express();
+
+const whitelist = [
+  "http://bislenz.com",
+  "https://bislenz.com",
+  "http://52.31.66.65"
+];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  }
+};
+
+// corsOptions
+//app.use(cors(corsOptions));
+
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use("/api", routes);
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+const PORT = process.env.port || 5000;
 
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});

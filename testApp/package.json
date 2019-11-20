@@ -1,14 +1,25 @@
 {
-  "name": "testapp",
-  "version": "0.0.0",
-  "private": true,
+  "name": "dbtesti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "morgan": "~1.9.1"
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "googleapis": "^39.2.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.3.1",
+    "utf8": "^3.0.0",
+    "uuid": "^3.3.2",
+    "wordpress": "^1.4.1"
   }
 }
