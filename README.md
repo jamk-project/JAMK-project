@@ -4,9 +4,9 @@ This is the team project that is part of the course TTMS1100.9S0V1 at _[JAMK Uni
 
 ## Our developer team:
 
-[Johanna Kaasalainen](https://github.com/lasikuula) - team leader, developer  
+[Johanna Kaasalainen](https://github.com/lasikuula) - developer  
 [Jouni Timonen](https://github.com/JouniTimonen) - designer  
-[Leevi Kukkonen](https://github.com/Lewizkuz) - secretary, designer  
+[Leevi Kukkonen](https://github.com/Lewizkuz) - designer  
 [Dmitry Sklyarov](https://github.com/sudexp) - developer
 
 ## Resourses:
