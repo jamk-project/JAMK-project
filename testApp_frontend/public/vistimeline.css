@@ -1,0 +1,180 @@
+button {
+  margin: 1em;
+}
+
+#xbtn {
+  margin-top: 10px;
+  background-color: #f13b3b;
+  color: #fff;
+}
+
+.frame {
+  margin: auto;
+  width: 90vw;
+  min-width: 600px;
+  min-height: 130px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  overflow: auto;
+}
+
+.timelinecontrols {
+  min-height: 70px;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+}
+
+.timelinecontrols button {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.box {
+  border: 1px solid rgb(99, 99, 99);
+  margin-left: 20px;
+  min-height: 15px;
+  min-width: 15px;
+}
+.round {
+  margin-left: 20px;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+}
+.boxtext {
+  margin-left: 5px;
+}
+#red {
+  background: #f39797;
+}
+#green {
+  background: #1aa260;
+  /* rgb(182, 243, 182); */
+}
+#blue {
+  background: #3b5998;
+}
+#blue2 {
+  background: #3b5998;
+}
+#liblue {
+  background: #4875b4;
+}
+#yellow {
+  background: #feff9c;
+}
+
+/* TIMELINE TYYLITYKSET */
+#toggleactivebtn {
+  background-color: #fff;
+  /* font-size: 0.9em; */
+  border: none;
+  margin-left: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 1px 1px #ccc;
+}
+
+.timelinebtn {
+  margin-right: 10px;
+  background-color: #feff9c;
+  color: green;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: 0 2px 2px #ccc;
+}
+
+.vis-timeline {
+  min-height: 250px;
+  max-height: 500px;
+}
+
+.info-box-style {
+  display: none;
+  height: auto;
+  max-height: 500px;
+  background-color: lightyellow;
+  overflow: auto;
+}
+
+#info-box button {
+  float: right;
+  cursor: pointer;
+}
+
+#info-content {
+  padding: 1%;
+}
+
+#info-content img {
+  max-height: 200px;
+  margin-left: 20px;
+}
+
+/* TIMELINE ITEM TYYLITYKSET*/
+.vis-item {
+  cursor: pointer;
+}
+
+.vis-item-content {
+  display: flex !important;
+}
+
+.vis-item.activeg {
+  background-color: #1aa260;
+  color: #fff;
+}
+
+.vis-item.activeg:hover {
+  background-color: lightgreen;
+}
+
+.vis-item.active {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.vis-item.active:hover {
+  background-color: #6a81b4;
+  color: #fff;
+}
+
+.vis-item.activeli {
+  background-color: #4875b4;
+  color: #fff;
+}
+
+.vis-item.activeli:hover {
+  background-color: #6a81b4;
+  color: #fff;
+}
+
+.vis-item.note {
+  background-color: #feff9c;
+}
+
+.vis-item.note:hover {
+  background-color: #ccce7d;
+}
+
+.vis-item.paused {
+  background-color: #f39797;
+  border-color: #eb5252;
+}
+
+.vis-item.paused:hover {
+  background-color: #f08080;
+}
+
+.vis-item img {
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
+  pointer-events: none;
+}
+
+.vis-item.vis-selected {
+  background-color: rgb(230, 230, 211) !important;
+}
