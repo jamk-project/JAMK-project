@@ -4,9 +4,9 @@ This is the team project that is part of the course TTMS1100.9S0V1 at _[JAMK Uni
 
 ## Our developer team:
 
-[Johanna Kaasalainen](https://github.com/lasikuula) - team leader, developer  
+[Johanna Kaasalainen](https://github.com/lasikuula) - developer  
 [Jouni Timonen](https://github.com/JouniTimonen) - designer  
-[Leevi Kukkonen](https://github.com/Lewizkuz) - secretary, designer  
+[Leevi Kukkonen](https://github.com/Lewizkuz) - designer  
 [Dmitry Sklyarov](https://github.com/sudexp) - developer
 
 ## Resourses:
@@ -18,10 +18,11 @@ Working hours as [Excel](https://docs.google.com/spreadsheets/d/1eZ1vn9L-PebnHfg
 
 Project plan and such are located in [Onedrive folder](https://jamkstudent-my.sharepoint.com/:f:/g/personal/l4062_student_jamk_fi/En-nLszMSxpMr3jjtV6nWAkBMdWMWLJ9lIKlpbau7GCuxw?e=RShYdB).
 ## Timetable:
-
-8:30 - start of the day  
-9:00-9:15 - daily meeting  
-10:00-10:15 - coffee break  
-12:00-12:30 - dinner  
-14:00-14:15 - coffee break  
-16:30 - end of the day
+  Time  |  Thing  
+------- | -------
+8:30 | Start of the day  
+9:00-9:15 | Daily meeting  
+10:00-10:15 | Coffee break  
+12:00-12:30 | Dinner  
+14:00-14:15 | Coffee break  
+16:30 | End of the day
