@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/b590c501-8458-4ff4-bfe5-40844b47c4f4/resourceGroups/dilemma/providers/Microsoft.Web/sites/test-express-react0801",
+  "appService.deploySubpath": ""
+}
