@@ -1,5 +1,5 @@
 .App {
-  background-color: fff;
+  background-color: #fff;
 }
 
 .App-header {
@@ -32,6 +32,18 @@
 .Nav a {
   color: #fff;
   text-decoration: none;
+}
+
+.Login {
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 1em;
+}
+
+.LikeNav {
+  position: absolute;
+  top: 35%;
+  right: 0;
 }
 
 .Nav a:hover {
@@ -94,7 +106,7 @@ footer {
 
 footer p {
   padding-top: 1.5em;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 button {
