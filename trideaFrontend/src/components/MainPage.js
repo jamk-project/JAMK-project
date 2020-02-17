@@ -57,20 +57,31 @@ const MainPage = () => {
 
   const company = auth.currentUser();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
   const handleLogout = () => auth.logout()
 
   const dropdown = (
     <div className='Nav2 dropdown'>
       <div className='dropdown-content'>
         {returnLinks}
+<<<<<<< HEAD
         <NavLink to='/home' onClick={handleLogout}><img src='/img/profile.webp' height='20px' alt='User logo' />{company.name}</NavLink>
+=======
+        <NavLink to='/home' onClick={handleLogout}><img src='/img/profile.webp' height='30px' alt='User logo' /><span> </span>{company.name}</NavLink>
+>>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
       </div>
     </div>
   )
 
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
   if (auth.isLoggedIn()) {
      console.log(auth.getToken());
 
@@ -82,12 +93,16 @@ const MainPage = () => {
               <NavLink to='/home' className='Logo'><img src='/img/cropped-BisLenzLogoWhite.png' height='60px' alt='Bislenz logo' /></NavLink>
               <div className='Nav'>
                 {returnLinks}
-                <div className='padding username'>
-                <img className='userLogo' src='/img/profile.webp' height='20px' alt='User logo' />
-                {company.name}
-                <NavLink className='user' to='#' onClick={handleLogout}>Logout</NavLink>
-                </div>
+                
               </div>
+              <div className='username userLogo'>
+                <img  src='/img/profile.webp' height='50px' alt='User logo' />
+                <br></br>
+                <ul>
+                  <li className="compName">{company.name}</li>
+                  <NavLink className='user' to='#' onClick={handleLogout}>Logout</NavLink>
+                </ul>
+                </div>
               {isOpen && window.innerWidth <= 1000 ? dropdown : null}
               <div className='dropbtn'>
                 <HamburgerMenu

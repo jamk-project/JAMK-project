@@ -30,7 +30,7 @@
 .Nav {
   position: absolute;
   top: 35%;
-  right: 0;
+  right: 10em;
   display: flex;
 }
 
@@ -91,16 +91,63 @@
 }
 .user {
   position: absolute;
-  display: none;
+  background-color: #093e78;
+  text-decoration: none;
+  width: 8em;
+  padding: 0.3em;
+  text-align: center;
+  color: #fff;
 }
+
+.user:hover {
+  color: dodgerblue;
+}
+
 .username {
   color: #fff;
 }
+<<<<<<< HEAD
 .username:hover .user{
+=======
+.userLogo:hover  ul{
+>>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
   display: block;
 }
 .dropbtn {
   display: none;
+}
+
+.userLogo {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  width: 8em;
+}
+
+.userLogo ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.6em;
+  display: none;
+}
+
+.compName {
+  padding-top: 1em;
+  height: 3em;
+}
+
+.userLogo li {
+  color: #606060;
+  background-color: #f1f1f1;
+  width: 8em;
+  padding: 0.3em;
+  text-align: center;
+}
+
+.userLogo img {
+  border-radius: 50%;
+  cursor: pointer;
+
 }
 
 .padding {
@@ -156,7 +203,11 @@ button:hover {
 
   .Nav {
     display: none;
-  } 
+  }
+  
+  .userLogo {
+    display: none;
+  }
 
   .Nav2 {
     display: block;
