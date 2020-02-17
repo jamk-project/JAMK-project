@@ -57,31 +57,23 @@ const MainPage = () => {
 
   const company = auth.currentUser();
 
-<<<<<<< HEAD
-
-=======
->>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
   const handleLogout = () => auth.logout()
 
   const dropdown = (
     <div className='Nav2 dropdown'>
       <div className='dropdown-content'>
         {returnLinks}
-<<<<<<< HEAD
-        <NavLink to='/home' onClick={handleLogout}><img src='/img/profile.webp' height='20px' alt='User logo' />{company.name}</NavLink>
-=======
         <NavLink to='/home' onClick={handleLogout}><img src='/img/profile.webp' height='30px' alt='User logo' /><span> </span>{company.name}</NavLink>
->>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
       </div>
     </div>
   )
 
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
-<<<<<<< HEAD
-=======
+  const img = (company) => {
+    return `/img/${company.name}.png`;
+  }
 
->>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
   if (auth.isLoggedIn()) {
      console.log(auth.getToken());
 
@@ -96,7 +88,7 @@ const MainPage = () => {
                 
               </div>
               <div className='username userLogo'>
-                <img  src='/img/profile.webp' height='50px' alt='User logo' />
+                <img src={img(company)} height='50px' alt='User logo' />
                 <br></br>
                 <ul>
                   <li className="compName">{company.name}</li>
@@ -137,7 +129,6 @@ const MainPage = () => {
           </div>
           <footer>
             <p>Tridea 2020</p>
-            <button onClick={() => console.log('Footer button clicked')} id='myBtn' title='Go to top'>^</button>
           </footer>
         </div>
       </Router>

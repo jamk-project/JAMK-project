@@ -106,11 +106,7 @@
 .username {
   color: #fff;
 }
-<<<<<<< HEAD
-.username:hover .user{
-=======
 .userLogo:hover  ul{
->>>>>>> dc16a5243fe9f769d8bf38504abbe5a68d3039ff
   display: block;
 }
 .dropbtn {
