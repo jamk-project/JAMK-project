@@ -48,8 +48,7 @@ const MainPage = () => {
 
   const returnLinks = (
     <>
-
-      <div><NavLink to='/journey' className='padding' activeStyle={activeStyle}>CUSTOMER JOURNEY</NavLink></div>
+      <div className="dropdown1"><NavLink to='/journey' className='padding' activeStyle={activeStyle}>CUSTOMER JOURNEY</NavLink></div>
       <div><NavLink to='/voice' className='padding' activeStyle={activeStyle}>VOICE OF CUSTOMER</NavLink></div>
       <div><NavLink to='/marketing' className='padding' activeStyle={activeStyle}>MARKETING PERFORMANCE</NavLink></div>
     </>
@@ -82,7 +81,29 @@ const MainPage = () => {
               <NavLink to='/home' className='Logo'><img src='/img/cropped-BisLenzLogoWhite.png' height='60px' alt='Bislenz logo' /></NavLink>
               <div className='Nav'>
                 {returnLinks}
-                
+                <ul className="drop1">
+                  <li><NavLink to="/">Brand Reach</NavLink></li>
+                  <li><NavLink to="/">Website Visitors</NavLink></li>
+                  <li><NavLink to="/">Conversion</NavLink></li>
+                  <li><NavLink to="/">Sales</NavLink></li>
+                  <li><NavLink to="/">Google My Business</NavLink></li>
+                </ul>
+                <ul className="drop2">
+                  <li><NavLink to="/">Voice of Customer</NavLink></li>
+                  <li><NavLink to="/">Online Experience</NavLink></li>
+                  <li><NavLink to="/">Onsite Experience</NavLink></li>
+                  <li><NavLink to="/">Customer Service and Sales Experience</NavLink></li>
+                  <li><NavLink to="/">Social Voice</NavLink></li>
+                  <li><NavLink to="/">Survey Management</NavLink></li>
+                </ul>
+                <ul className="drop3">
+                  <li><NavLink to="/">Online Marketing Summary</NavLink></li>
+                  <li><NavLink to="/">Campaign Details</NavLink></li>
+                  <li><NavLink to="/">Online Campaign Timeline</NavLink></li>
+                  <li><NavLink to="/">Social Media organic Timeline</NavLink></li>
+                  <li><NavLink to="/">Social Media Engagement</NavLink></li>
+                  <li><NavLink to="/">Online Campaign Comparison</NavLink></li>
+                </ul>
               </div>
               <div className='username userLogo'>
                 <img  src='/img/profile.webp' height='50px' alt='User logo' />
@@ -126,7 +147,6 @@ const MainPage = () => {
           </div>
           <footer>
             <p>Tridea 2020</p>
-            <button onClick={() => console.log('Footer button clicked')} id='myBtn' title='Go to top'>^</button>
           </footer>
         </div>
       </Router>

@@ -19,7 +19,6 @@ const LoginPage = () => (
         </div>
     <footer>
       <p>Tridea 2020</p>
-      <button onClick={() => console.log('Footer button clicked')} id='myBtn' title='Go to top'>^</button>
     </footer>
   </div>
 );

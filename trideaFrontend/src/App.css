@@ -146,6 +146,57 @@
   padding-left: 2em;
 }
 
+.dropdown:hover ~ .drop1{
+  display: block;
+}
+
+.Nav ul {
+  background-color: #fff;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  
+}
+
+.Nav li{
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  border-bottom: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;
+  border-right: 1px solid #bbbbbb;
+}
+
+.Nav li a {
+  color: #606060;
+}
+
+.drop1 {
+  position: absolute;
+  top: 3.3em;
+  left: 2em;
+  display: none;
+  white-space: nowrap;
+}
+
+.drop2 {
+  position: absolute;
+  top: 3.3em;
+  left: 13.5em;
+  display: none;
+  white-space: nowrap;
+}
+
+.drop3 {
+  position: absolute;
+  top: 3.3em;
+  left: 25em;
+  white-space: nowrap;
+}
+
+.content {
+  width: 70em;
+  margin: auto;
+}
+
 footer {
   height: 6em;
   background-color: #111111;
@@ -162,35 +213,23 @@ footer p {
   font-size: 1em;
 }
 
-button {
-  position: absolute;
-  right: 2em;
-  bottom: 2.2em;
-  padding-top: 0.1em;
-  background-color: #111111;
-  border: none;
-  outline: none;
-  color: grey;
-  font-size: 3em;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-}
-
-button:hover {
-  color: #093e78;
-  transition: color 0.5s;
-}
-
 @media only screen and (max-width: 1300px) {
   .Header-container {
     width: 60em;
+  }
+
+  .content {
+    width: 50em;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .Header-container {
     width: 100%;
+  }
+
+  .content {
+    width: 95%;
   }
 
   .Nav {
