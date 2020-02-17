@@ -10,7 +10,6 @@ import HamburgerMenu from 'react-hamburger-menu';
 import '../App.css';
 import Auth from './Auth';
 import CustomPage from './CustomPage'
-import LoginPage from './LoginPage'
 
 const MainPage = () => {
   const auth = new Auth();
@@ -56,14 +55,18 @@ const MainPage = () => {
     </>
   )
 
-  const dropdown = (<div className='Nav2 dropdown'>
-    <div className='dropdown-content'>
-      {returnLinks}
-      <NavLink to='/home'><img src='/img/profile.webp' height='20px' alt='User logo' />DILEMMA</NavLink>
-    </div>
-  </div>)
+  const company = auth.currentUser();
 
-  const name = ['home', 'journey', 'voice', 'marketing'];
+  const dropdown = (
+    <div className='Nav2 dropdown'>
+      <div className='dropdown-content'>
+        {returnLinks}
+        <NavLink to='/home'><img src='/img/profile.webp' height='20px' alt='User logo' />{company.name}</NavLink>
+      </div>
+    </div>
+  )
+
+  const pageName = ['home', 'journey', 'voice', 'marketing'];
 
   const handleLogout = () => auth.logout()
 
@@ -79,10 +82,10 @@ const MainPage = () => {
               <div className='Nav'>
                 {returnLinks}
                 <img className='padding userLogo' src='/img/profile.webp' height='20px' alt='User logo' />
-                <NavLink to='#' onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-                  DILEMMA  <span> </span>
+                <div onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                  {company.name}
                   {isShown && <NavLink to='#' onClick={handleLogout}>Logout</NavLink>}
-                </NavLink>
+                </div>
               </div>
               {isOpen && window.innerWidth <= 1000 ? dropdown : null}
               <div className='dropbtn'>
@@ -102,18 +105,17 @@ const MainPage = () => {
           </div>
           <div className='content'>
             <Switch>
-              <Route exact path='/' component={LoginPage} />
               <Route path='/home' render={(props) => (
-                <CustomPage {...props} data={name[0]} />
+                <CustomPage {...props} pageName={pageName[0]} company={company} />
               )} />
               <Route path='/journey' render={(props) => (
-                <CustomPage {...props} data={name[1]} />
+                <CustomPage {...props} pageName={pageName[1]} company={company} />
               )} />
               <Route path='/voice' render={(props) => (
-                <CustomPage {...props} data={name[2]} />
+                <CustomPage {...props} pageName={pageName[2]} company={company} />
               )} />
               <Route path='/marketing' render={(props) => (
-                <CustomPage {...props} data={name[3]} />
+                <CustomPage {...props} pageName={pageName[3]} company={company} />
               )} />
             </Switch>
           </div>
