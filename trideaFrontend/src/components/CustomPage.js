@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { urls } from '../config/urls'
+
 const CustomPage = ({ pageName, company }) => {
   const { firstName, lastName, name } = company;
 
@@ -13,19 +15,6 @@ const CustomPage = ({ pageName, company }) => {
       'Unnown': 'Sorry, we do not know who you are :('
     }
 
-    const url = {
-      'Apple': {
-        'journey': 'https://datastudio.google.com/embed/reporting/1Yxr26NgYsehy-5UknwJ-C3iuAMBRdpet/page/1jK5',
-        'voice': 'https://datastudio.google.com/embed/reporting/1Yxr26NgYsehy-5UknwJ-C3iuAMBRdpet/page/fcaW',
-        'marketing': 'https://datastudio.google.com/embed/reporting/1Yxr26NgYsehy-5UknwJ-C3iuAMBRdpet/page/qfTx'
-      },
-      'Microsoft': {
-        'journey': 'https://datastudio.google.com/embed/reporting/1Yxr26NgYsehy-5UknwJ-C3iuAMBRdpet/page/Ndjw',
-        'voice': 'https://datastudio.google.com/embed/reporting/1Yxr26NgYsehy-5UknwJ-C3iuAMBRdpet/page/n1Sx',
-        'marketing': 'https://datastudio.google.com/embed/reporting/1Yxr26NgYsehy-5UknwJ-C3iuAMBRdpet/page/ZavEB'
-      },
-    }
-
     if (pageName === 'home') {
       return (
         <>
@@ -36,7 +25,7 @@ const CustomPage = ({ pageName, company }) => {
         </>
       );
     }
-    return <iframe title='data' height={iFrameHeigth} width={iFrameWidth} src={url[name][pageName]} />
+    return <iframe title='data' height={iFrameHeigth} width={iFrameWidth} src={urls[name][pageName]} />
   }
 
 
