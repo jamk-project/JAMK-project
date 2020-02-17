@@ -27,6 +27,7 @@
   position: absolute;
   top: 35%;
   right: 0;
+  display: flex;
 }
 
 .Nav a {
@@ -84,7 +85,16 @@
 .dropdown-content {
   display: block;
 }
-
+.user {
+  position: absolute;
+  display: none;
+}
+.username {
+  color: #fff;
+}
+.Nav:hover .user{
+  display: block;
+}
 .dropbtn {
   display: none;
 }
@@ -142,7 +152,7 @@ button:hover {
 
   .Nav {
     display: none;
-  }
+  } 
 
   .Nav2 {
     display: block;

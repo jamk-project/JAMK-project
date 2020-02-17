@@ -16,7 +16,6 @@ const MainPage = () => {
   // console.log(auth)
 
   const [isOpen, setIsOpen] = useState(false);
-  const [isShown, setIsShown] = useState(false);
 
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
@@ -49,9 +48,10 @@ const MainPage = () => {
 
   const returnLinks = (
     <>
-      <NavLink to='/journey' className='padding' activeStyle={activeStyle}>CUSTOMER JOURNEY</NavLink>
-      <NavLink to='/voice' className='padding' activeStyle={activeStyle}>VOICE OF CUSTOMER</NavLink>
-      <NavLink to='/marketing' className='padding' activeStyle={activeStyle}>MARKETING PERFORMANCE</NavLink>
+
+      <div><NavLink to='/journey' className='padding' activeStyle={activeStyle}>CUSTOMER JOURNEY</NavLink></div>
+      <div><NavLink to='/voice' className='padding' activeStyle={activeStyle}>VOICE OF CUSTOMER</NavLink></div>
+      <div><NavLink to='/marketing' className='padding' activeStyle={activeStyle}>MARKETING PERFORMANCE</NavLink></div>
     </>
   )
 
@@ -81,10 +81,10 @@ const MainPage = () => {
               <NavLink to='/home' className='Logo'><img src='/img/cropped-BisLenzLogoWhite.png' height='60px' alt='Bislenz logo' /></NavLink>
               <div className='Nav'>
                 {returnLinks}
-                <img className='padding userLogo' src='/img/profile.webp' height='20px' alt='User logo' />
-                <div onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-                  {company.name}
-                  {isShown && <NavLink to='#' onClick={handleLogout}>Logout</NavLink>}
+                <div className='padding username'>
+                <img className='userLogo' src='/img/profile.webp' height='20px' alt='User logo' />
+                {company.name}
+                <NavLink className='user' to='#' onClick={handleLogout}>Logout</NavLink>
                 </div>
               </div>
               {isOpen && window.innerWidth <= 1000 ? dropdown : null}
