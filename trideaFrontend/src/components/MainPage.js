@@ -57,21 +57,22 @@ const MainPage = () => {
 
   const company = auth.currentUser();
 
+
+  const handleLogout = () => auth.logout()
+
   const dropdown = (
     <div className='Nav2 dropdown'>
       <div className='dropdown-content'>
         {returnLinks}
-        <NavLink to='/home'><img src='/img/profile.webp' height='20px' alt='User logo' />{company.name}</NavLink>
+        <NavLink to='/home' onClick={handleLogout}><img src='/img/profile.webp' height='20px' alt='User logo' />{company.name}</NavLink>
       </div>
     </div>
   )
 
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
-  const handleLogout = () => auth.logout()
-
   if (auth.isLoggedIn()) {
-    // console.log(auth.currentUser());
+     console.log(auth.getToken());
 
     return (
       <Router>

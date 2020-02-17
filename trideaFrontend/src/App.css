@@ -17,6 +17,10 @@
   position: relative;
 }
 
+.content {
+  padding: 3em;
+  color: #102b47;
+}
 .Logo {
   position: absolute;
   top: 15%;
@@ -92,7 +96,7 @@
 .username {
   color: #fff;
 }
-.Nav:hover .user{
+.username:hover .user{
   display: block;
 }
 .dropbtn {
