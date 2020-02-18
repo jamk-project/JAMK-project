@@ -29,7 +29,6 @@ const CustomPage = ({ pageName, company }) => {
     return <iframe title='data' height={iFrameHeigth} width={iFrameWidth} src={urls[name][jobTitle][pageName]} />
   }
 
-
   return renderPage(pageName, name, jobTitle)
 }
 
