@@ -106,9 +106,11 @@
 .username {
   color: #fff;
 }
-.userLogo:hover  ul{
+
+.userLogo:hover ul {
   display: block;
 }
+
 .dropbtn {
   display: none;
 }
@@ -143,7 +145,6 @@
 .userLogo img {
   border-radius: 50%;
   cursor: pointer;
-
 }
 
 .padding {
@@ -200,7 +201,7 @@ button:hover {
   .Nav {
     display: none;
   }
-  
+
   .userLogo {
     display: none;
   }

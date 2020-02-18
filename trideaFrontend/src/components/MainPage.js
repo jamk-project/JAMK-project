@@ -48,7 +48,6 @@ const MainPage = () => {
 
   const returnLinks = (
     <>
-
       <div><NavLink to='/journey' className='padding' activeStyle={activeStyle}>CUSTOMER JOURNEY</NavLink></div>
       <div><NavLink to='/voice' className='padding' activeStyle={activeStyle}>VOICE OF CUSTOMER</NavLink></div>
       <div><NavLink to='/marketing' className='padding' activeStyle={activeStyle}>MARKETING PERFORMANCE</NavLink></div>
@@ -70,10 +69,6 @@ const MainPage = () => {
 
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
-  const img = (company) => {
-    return `/img/${company.name.toLowerCase()}.png`;
-  }
-
   if (auth.isLoggedIn()) {
      console.log(auth.getToken());
 
@@ -85,16 +80,16 @@ const MainPage = () => {
               <NavLink to='/home' className='Logo'><img src='/img/cropped-BisLenzLogoWhite.png' height='60px' alt='Bislenz logo' /></NavLink>
               <div className='Nav'>
                 {returnLinks}
-                
               </div>
               <div className='username userLogo'>
                 <img src={img(company)} height='50px' alt='User logo' />
+
                 <br></br>
                 <ul>
                   <li className="compName">{company.name}</li>
                   <NavLink className='user' to='#' onClick={handleLogout}>Logout</NavLink>
                 </ul>
-                </div>
+              </div>
               {isOpen && window.innerWidth <= 1000 ? dropdown : null}
               <div className='dropbtn'>
                 <HamburgerMenu
@@ -131,7 +126,7 @@ const MainPage = () => {
             <p>Tridea 2020</p>
           </footer>
         </div>
-      </Router>
+      </Router >
     );
   };
 }
