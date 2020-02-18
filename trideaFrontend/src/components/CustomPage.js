@@ -18,8 +18,9 @@ const CustomPage = ({ pageName, company }) => {
     if (pageName === 'home') {
       return (
         <>
-          <h1>This is the {pageName} page!</h1>
+          <h1 className='center'>This is the {pageName} page!</h1>
           <h2>Hello, {firstName}  {lastName} from {name}.</h2>
+          <p>Your status in {name} company is <b>{jobTitle}</b></p>
           <h3>Some text for mr. {firstName}:</h3>
           <p>{text[name]}</p>
           <br />

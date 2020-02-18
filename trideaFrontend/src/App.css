@@ -17,6 +17,10 @@
   position: relative;
 }
 
+.content {
+  padding: 3em;
+  color: #102b47;
+}
 .Logo {
   position: absolute;
   top: 15%;
@@ -181,6 +185,10 @@ button {
 button:hover {
   color: #093e78;
   transition: color 0.5s;
+}
+
+.center {
+  text-align: center;
 }
 
 @media only screen and (max-width: 1300px) {
