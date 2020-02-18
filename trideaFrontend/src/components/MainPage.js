@@ -71,7 +71,7 @@ const MainPage = () => {
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
   const img = (company) => {
-    return `/img/${company.name}.png`;
+    return `/img/${company.name.toLowerCase()}.png`;
   }
 
   if (auth.isLoggedIn()) {
