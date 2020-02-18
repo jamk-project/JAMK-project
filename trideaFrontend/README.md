@@ -1,3 +1,40 @@
+# HOX
+## Required things to run this app:
+* npm install ja npm start
+* Config-folder in src including following files:
+
+### urls.js
+```
+export const urls = {
+    'Apple': {
+      'journey': 'datastudiolink1',
+      'voice': 'datastudiolink2',
+      'marketing': 'datastudiolink3'
+    },
+    'Microsoft': {
+      'journey': 'datastudiolink4',
+      'voice': 'datastudiolink5',
+      'marketing': 'datastudiolink6'
+    },
+  }
+```
+### auth.js
+
+* Follow this. Its good: https://medium.com/@fiqriismail/how-to-secure-your-reactjs-frontend-with-azure-ad-b2c-8fd165f602e8
+```
+// Follow this. Its good: https://medium.com/@fiqriismail/how-to-secure-your-reactjs-frontend-with-azure-ad-b2c-8fd165f602e8
+export const auth = {
+    instance: 'https://login.microsoftonline.com/tfp/',
+    tenant: 'yourtenantnamehere.onmicrosoft.com',
+    signInPolicy: 'youruserflowhere',
+    clientId: 'yourclientIDhere',
+    cacheLocation: 'sessionStorage',
+    scopes: ['yourscopehere/user_impersonation'],
+    redirectUri: 'http://localhost:3000',
+    postLogoutRedirectUri: window.location.origin,
+  };
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
