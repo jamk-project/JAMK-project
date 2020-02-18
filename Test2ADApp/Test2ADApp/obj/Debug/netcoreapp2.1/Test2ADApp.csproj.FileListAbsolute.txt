@@ -1,0 +1,70 @@
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.deps.json
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.runtimeconfig.json
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.runtimeconfig.dev.json
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.dll
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.pdb
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.Views.dll
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.Views.pdb
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.csprojAssemblyReference.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.csproj.CoreCompileInputs.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorAssemblyInfo.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorAssemblyInfo.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.AssemblyInfoInputs.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.AssemblyInfo.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.TagHelpers.input.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.TagHelpers.output.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorCoreGenerate.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorTargetAssemblyInfo.cache
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorTargetAssemblyInfo.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.Views.pdb
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.dll
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.pdb
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.csproj.CopyComplete
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\L4062\11022020 Azure\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\AccessDenied.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.deps.json
+D:\L4062\c-project\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.runtimeconfig.json
+D:\L4062\c-project\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.runtimeconfig.dev.json
+D:\L4062\c-project\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.dll
+D:\L4062\c-project\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.pdb
+D:\L4062\c-project\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.Views.dll
+D:\L4062\c-project\Test2ADApp\Test2ADApp\bin\Debug\netcoreapp2.1\Test2ADApp.Views.pdb
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.csprojAssemblyReference.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.csproj.CoreCompileInputs.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorAssemblyInfo.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorAssemblyInfo.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.AssemblyInfoInputs.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.AssemblyInfo.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.TagHelpers.input.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.TagHelpers.output.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorCoreGenerate.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorTargetAssemblyInfo.cache
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.RazorTargetAssemblyInfo.cs
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.Views.pdb
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.dll
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.pdb
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Test2ADApp.csproj.CopyComplete
+D:\L4062\c-project\Test2ADApp\Test2ADApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AccessDenied.g.cshtml.cs

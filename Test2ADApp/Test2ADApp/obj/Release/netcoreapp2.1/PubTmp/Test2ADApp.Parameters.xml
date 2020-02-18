@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="johkunTestADApp123" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\L4062\\11022020\ Azure\\Test2ADApp\\Test2ADApp\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
