@@ -70,7 +70,7 @@ const MainPage = () => {
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
   if (auth.isLoggedIn()) {
-    // console.log(auth.currentUser());
+     console.log(auth.getToken());
 
     return (
       <Router>
@@ -82,7 +82,8 @@ const MainPage = () => {
                 {returnLinks}
               </div>
               <div className='username userLogo'>
-                <img src='/img/profile.webp' height='50px' alt='User logo' />
+                <img src={img(company)} height='50px' alt='User logo' />
+
                 <br></br>
                 <ul>
                   <li className="compName">{company.name}</li>
@@ -123,7 +124,6 @@ const MainPage = () => {
           </div>
           <footer>
             <p>Tridea 2020</p>
-            <button onClick={() => console.log('Footer button clicked')} id='myBtn' title='Go to top'>^</button>
           </footer>
         </div>
       </Router >

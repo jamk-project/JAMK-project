@@ -17,6 +17,10 @@
   position: relative;
 }
 
+.content {
+  padding: 3em;
+  color: #102b47;
+}
 .Logo {
   position: absolute;
   top: 15%;
