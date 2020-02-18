@@ -92,7 +92,7 @@
 .username {
   color: #fff;
 }
-.Nav:hover .user{
+.Nav:hover .user {
   display: block;
 }
 .dropbtn {
@@ -152,7 +152,7 @@ button:hover {
 
   .Nav {
     display: none;
-  } 
+  }
 
   .Nav2 {
     display: block;
