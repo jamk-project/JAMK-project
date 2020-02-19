@@ -46,42 +46,48 @@ const MainPage = () => {
     color: 'dodgeblue',
   }
 
+  const drop1 = (<ul className="drop1">
+    <li><NavLink to="/">Brand Reach</NavLink></li>
+    <li><NavLink to="/">Website Visitors</NavLink></li>
+    <li><NavLink to="/">Conversion</NavLink></li>
+    <li><NavLink to="/">Sales</NavLink></li>
+    <li><NavLink to="/">Google My Business</NavLink></li>
+  </ul>);
+
+  const drop2 = (<ul className="drop2">
+    {/* <li><NavLink to="/">Voice of Customer</NavLink></li> */}
+    <li><NavLink to="/">Online Experience</NavLink></li>
+    <li><NavLink to="/">Onsite Experience</NavLink></li>
+    <li><NavLink to="/">Customer Service and Sales Experience</NavLink></li>
+    <li><NavLink to="/">Social Voice</NavLink></li>
+    <li><NavLink to="/">Survey Management</NavLink></li>
+  </ul>);
+
+  const drop3 = (<ul className="drop3">
+    <li><NavLink to="/">Online Marketing Summary</NavLink></li>
+    <li><NavLink to="/">Campaign Details</NavLink></li>
+    <li><NavLink to="/">Online Campaign Timeline</NavLink></li>
+    <li><NavLink to="/">Social Media organic Timeline</NavLink></li>
+    <li><NavLink to="/">Social Media Engagement</NavLink></li>
+    <li><NavLink to="/">Online Campaign Comparison</NavLink></li>
+  </ul>);
+
   const returnLinks = (
     <>
       <li className="dropdown1">
-      <NavLink to='/journey' className='padding' activeStyle={activeStyle}>CUSTOMER JOURNEY</NavLink>
-                <ul className="drop1">
-                  <li><NavLink to="/">Brand Reach</NavLink></li>
-                  <li><NavLink to="/">Website Visitors</NavLink></li>
-                  <li><NavLink to="/">Conversion</NavLink></li>
-                  <li><NavLink to="/">Sales</NavLink></li>
-                  <li><NavLink to="/">Google My Business</NavLink></li>
-                </ul>
+        <NavLink to='/journey' className='padding' activeStyle={activeStyle}>CUSTOMER JOURNEY</NavLink>
+        {drop1}
       </li>
       <li className="dropdown2">
-      <NavLink to='/voice' className='padding' activeStyle={activeStyle}>VOICE OF CUSTOMER</NavLink>
-                <ul className="drop2">
-                  <li><NavLink to="/">Voice of Customer</NavLink></li>
-                  <li><NavLink to="/">Online Experience</NavLink></li>
-                  <li><NavLink to="/">Onsite Experience</NavLink></li>
-                  <li><NavLink to="/">Customer Service and Sales Experience</NavLink></li>
-                  <li><NavLink to="/">Social Voice</NavLink></li>
-                  <li><NavLink to="/">Survey Management</NavLink></li>
-                </ul>
+        <NavLink to='/voice' className='padding' activeStyle={activeStyle}>VOICE OF CUSTOMER</NavLink>
+        {drop2}
       </li>
-     <li className="dropdown3">
-      <NavLink to='/marketing' className='padding' activeStyle={activeStyle}>MARKETING PERFORMANCE</NavLink>
-                <ul className="drop3">
-                  <li><NavLink to="/">Online Marketing Summary</NavLink></li>
-                  <li><NavLink to="/">Campaign Details</NavLink></li>
-                  <li><NavLink to="/">Online Campaign Timeline</NavLink></li>
-                  <li><NavLink to="/">Social Media organic Timeline</NavLink></li>
-                  <li><NavLink to="/">Social Media Engagement</NavLink></li>
-                  <li><NavLink to="/">Online Campaign Comparison</NavLink></li>
-                </ul>
+      <li className="dropdown3">
+        <NavLink to='/marketing' className='padding' activeStyle={activeStyle}>MARKETING PERFORMANCE</NavLink>
+        {drop3}
       </li>
     </>
-  )
+  );
 
   const company = auth.currentUser();
 
@@ -97,10 +103,28 @@ const MainPage = () => {
     </div>
   )
 
+  const content = (
+    <div className='content'>
+      <Switch>
+        <Route path='/home' render={(props) => (
+          <CustomPage {...props} pageName={pageName[0]} company={company} />
+        )} />
+        <Route path='/journey' render={(props) => (
+          <CustomPage {...props} pageName={pageName[1]} company={company} />
+        )} />
+        <Route path='/voice' render={(props) => (
+          <CustomPage {...props} pageName={pageName[2]} company={company} />
+        )} />
+        <Route path='/marketing' render={(props) => (
+          <CustomPage {...props} pageName={pageName[3]} company={company} />
+        )} />
+      </Switch>
+    </div>)
+
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
   const img = (company) => {
-    return `/img/${company.name.toLowerCase()}.png`;
+    return company.name ? `/img/${company.name.toLowerCase()}.png` : `/img/unknown.png`;
   }
 
   if (auth.isLoggedIn()) {
@@ -141,22 +165,7 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className='content'>
-            <Switch>
-              <Route path='/home' render={(props) => (
-                <CustomPage {...props} pageName={pageName[0]} company={company} />
-              )} />
-              <Route path='/journey' render={(props) => (
-                <CustomPage {...props} pageName={pageName[1]} company={company} />
-              )} />
-              <Route path='/voice' render={(props) => (
-                <CustomPage {...props} pageName={pageName[2]} company={company} />
-              )} />
-              <Route path='/marketing' render={(props) => (
-                <CustomPage {...props} pageName={pageName[3]} company={company} />
-              )} />
-            </Switch>
-          </div>
+          {content}
           <footer>
             <p>Tridea 2020</p>
           </footer>

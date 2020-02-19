@@ -5,7 +5,6 @@ class Auth {
   isLoggedIn = () => authentication.getAccessToken() ? true : false;
   logout = () => authentication.signOut();
   getToken = () => authentication.getAccessToken();
-
   currentUser = () => {
     const decoded = decodeJWT(authentication.getAccessToken());
 
