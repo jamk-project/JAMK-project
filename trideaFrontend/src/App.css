@@ -17,6 +17,10 @@
   position: relative;
 }
 
+.content {
+  padding: 3em;
+  color: #102b47;
+}
 .Logo {
   position: absolute;
   top: 15%;
@@ -131,9 +135,11 @@
 .username {
   color: #fff;
 }
-.userLogo:hover  ul{
+
+.userLogo:hover ul {
   display: block;
 }
+
 .dropbtn {
   display: none;
 }
@@ -168,7 +174,6 @@
 .userLogo img {
   border-radius: 50%;
   cursor: pointer;
-
 }
 
 .padding {
@@ -258,6 +263,30 @@ footer p {
   font-size: 1em;
 }
 
+button {
+  position: absolute;
+  right: 2em;
+  bottom: 2.2em;
+  padding-top: 0.1em;
+  background-color: #111111;
+  border: none;
+  outline: none;
+  color: grey;
+  font-size: 3em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #093e78;
+  transition: color 0.5s;
+}
+
+.center {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1300px) {
   .Header-container {
     width: 60em;
@@ -280,7 +309,7 @@ footer p {
   .Nav {
     display: none;
   }
-  
+
   .userLogo {
     display: none;
   }

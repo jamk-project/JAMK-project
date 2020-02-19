@@ -16,6 +16,7 @@ class Auth {
       emails: decoded.emails,
       city: decoded.city,
       country: decoded.country,
+      jobTitle: decoded.jobTitle
     };
   }
 }

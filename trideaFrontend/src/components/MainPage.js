@@ -80,7 +80,6 @@ const MainPage = () => {
                   <li><NavLink to="/">Online Campaign Comparison</NavLink></li>
                 </ul>
       </li>
-    
     </>
   )
 
@@ -100,8 +99,12 @@ const MainPage = () => {
 
   const pageName = ['home', 'journey', 'voice', 'marketing'];
 
+  const img = (company) => {
+    return `/img/${company.name.toLowerCase()}.png`;
+  }
 
   if (auth.isLoggedIn()) {
+    // console.log(auth.getToken());
     // console.log(auth.currentUser());
 
     return (
@@ -112,16 +115,16 @@ const MainPage = () => {
               <NavLink to='/home' className='Logo'><img src='/img/cropped-BisLenzLogoWhite.png' height='60px' alt='Bislenz logo' /></NavLink>
               <ul className="Nav">
                 {returnLinks}
-                
               </ul>
               <div className='username userLogo'>
-                <img  src='/img/profile.webp' height='50px' alt='User logo' />
+                <img src={img(company)} height='50px' alt='User logo' />
+
                 <br></br>
                 <ul>
                   <li className="compName">{company.name}</li>
                   <NavLink className='user' to='#' onClick={handleLogout}>Logout</NavLink>
                 </ul>
-                </div>
+              </div>
               {isOpen && window.innerWidth <= 1000 ? dropdown : null}
               <div className='dropbtn'>
                 <HamburgerMenu
@@ -158,7 +161,7 @@ const MainPage = () => {
             <p>Tridea 2020</p>
           </footer>
         </div>
-      </Router>
+      </Router >
     );
   };
 }

@@ -21,3 +21,5 @@ const App = () => {
 };
 
 export default App;
+
+// Remember to add config folder to src with auth.js and urls.js!
